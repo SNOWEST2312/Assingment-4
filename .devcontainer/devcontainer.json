@@ -50,12 +50,13 @@
         "liveServer.settings.donotShowInfoMsg": true,
         "github.copilot.enable": {
           "*": false,
+          "*": true,
           "plaintext": false,
           "markdown": false,
           "scminput": false
         },
-        "github.copilot.chat.enabled": false,
-        "github.copilot.nextEditSuggestions.enabled": false
+        "github.copilot.chat.enabled": true,
+        "github.copilot.nextEditSuggestions.enabled": true
       }
     }
   }
