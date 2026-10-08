@@ -46,10 +46,9 @@
         "css.validate": true,
         "html.css.support": true,
         "eslint.validate": ["javascript", "html", "css"],
-        "liveServer.settings.port": 5500,
+        "liveServer.settings.port": 3000,
         "liveServer.settings.donotShowInfoMsg": true,
         "github.copilot.enable": {
-          "*": false,
           "*": true,
           "plaintext": false,
           "markdown": false,
