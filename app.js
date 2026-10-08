@@ -1,5 +1,6 @@
 import express from 'express';
 import data from './our-modules/data.js';
+import renderAlbumPage from './our-modules/renderAlbumPage.js';
 
 const app = express();
 
@@ -14,9 +15,16 @@ app.get(['/', '/pages'], (req, res) => {
 
 app.get('/api/music/:bandId', (req, res) => {
   const bandId = req.params.bandId;
-  const band = data.find(b => b.id === bandId);
+  const band = data.find((b) => b.id === bandId);
 
   res.json(band);
+});
+
+app.get('/music-pages/:bandId/:albumId', (req, res) => {
+  const { bandId, albumId } = req.params;
+  const html = renderAlbumPage(bandId, albumId);
+
+  res.send(html);
 });
 
 app.listen(3000, () => {
