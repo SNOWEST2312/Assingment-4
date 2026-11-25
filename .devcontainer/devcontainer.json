@@ -47,15 +47,7 @@
         "html.css.support": true,
         "eslint.validate": ["javascript", "html", "css"],
         "liveServer.settings.port": 3000,
-        "liveServer.settings.donotShowInfoMsg": true,
-        "github.copilot.enable": {
-          "*": true,
-          "plaintext": false,
-          "markdown": false,
-          "scminput": false
-        },
-        "github.copilot.chat.enabled": true,
-        "github.copilot.nextEditSuggestions.enabled": true
+        "liveServer.settings.donotShowInfoMsg": true
       }
     }
   }
